@@ -1,6 +1,5 @@
 package java.lemfi.tests;
 
-
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -27,7 +26,7 @@ public class UserJourneyE2ETest extends BaseTest {
     void completeUserJourneyTest() {
         log.info(" Starting E2E User Journey Test");
 
-        log.info("\n=== STEP 1: User Registration ===");
+        log.info("STEP 1: User Registration");
         RegistrationRequest registrationRequest = RegistrationRequest.random();
         log.info("Registering user: {}", registrationRequest.getEmail());
 
@@ -44,10 +43,10 @@ public class UserJourneyE2ETest extends BaseTest {
         assertTrue(SessionManager.hasSession(), "JSESSIONID cookie should be stored");
         String sessionId = SessionManager.getSessionId();
         assertNotNull(sessionId, "Session ID should not be null");
-        log.info("✓ User registered successfully (ID: {})", registrationResponse.getUser().getId());
-        log.info("✓ JSESSIONID extracted: {}...", sessionId.substring(0, 8));
+        log.info("User registered successfully (ID: {})", registrationResponse.getUser().getId());
+        log.info("JSESSIONID extracted: {}...", sessionId.substring(0, 8));
 
-        log.info("\n=== STEP 2: Personal Data Update ===");
+        log.info("STEP 2: Personal Data Update");
         PersonalDataRequest personalDataRequest = PersonalDataRequest.random();
         log.info("Updating personal data: {} {}",
                 personalDataRequest.getFirstName(), personalDataRequest.getSurname());

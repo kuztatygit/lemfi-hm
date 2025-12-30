@@ -4,9 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-/**
- * User response model from API
- */
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserResponse {

@@ -6,9 +6,6 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
-/**
- * Payment response model from API
- */
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PaymentResponse {

@@ -14,7 +14,7 @@ public class SessionManager {
             sessionCookies.set(cookies);
             Cookie jsessionid = cookies.get("JSESSIONID");
             if (jsessionid != null) {
-                log.info("✓ JSESSIONID cookie stored: {}...", jsessionid.getValue().substring(0, 8));
+                log.info("JSESSIONID cookie stored: {}...", jsessionid.getValue().substring(0, 8));
             }
         }
     }

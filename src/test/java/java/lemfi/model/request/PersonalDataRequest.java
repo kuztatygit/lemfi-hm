@@ -7,9 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import net.datafaker.Faker;
 
-/**
- * Personal data request model for updating user profile
- */
 @Data
 @Builder
 @NoArgsConstructor
@@ -25,9 +22,6 @@ public class PersonalDataRequest {
     @JsonProperty("personalId")
     private Long personalId;
 
-    /**
-     * Generate a random personal data request with valid data
-     */
     public static PersonalDataRequest random() {
         Faker faker = new Faker();
         return PersonalDataRequest.builder()

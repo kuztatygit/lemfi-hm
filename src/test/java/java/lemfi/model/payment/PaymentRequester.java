@@ -2,13 +2,14 @@ package java.lemfi.model.payment;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.restassured.response.Response;
-import lemfi.helper.PropertiesHelper;
-import lemfi.helper.RequestHelper;
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 
+import java.lemfi.helper.PropertiesHelper;
+import java.lemfi.helper.RequestHelper;
 import java.net.URI;
 import java.util.Properties;
+
 
 @Slf4j
 @UtilityClass

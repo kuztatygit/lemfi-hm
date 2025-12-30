@@ -7,9 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import net.datafaker.Faker;
 
-/**
- * Registration request model for user sign-up
- */
 @Data
 @Builder
 @NoArgsConstructor
@@ -21,10 +18,6 @@ public class RegistrationRequest {
 
     @JsonProperty("password")
     private String password;
-
-    /**
-     * Generate a random registration request with valid data
-     */
     public static RegistrationRequest random() {
         Faker faker = new Faker();
         return RegistrationRequest.builder()

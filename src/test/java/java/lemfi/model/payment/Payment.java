@@ -1,10 +1,11 @@
 package java.lemfi.model.payment;
 
-import lemfi.model.TransactionType;
+
 import lombok.Builder;
 import lombok.Data;
 import net.datafaker.Faker;
 
+import java.lemfi.model.TransactionType;
 import java.time.LocalDate;
 import java.util.concurrent.ThreadLocalRandom;
 
